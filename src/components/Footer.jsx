@@ -3,9 +3,10 @@ import logoFooter from "../assets/logo-footer.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
 function Footer() {
   return (
-    <div className="w-full h-[7rem] bg-slate-700 flex justify-between items-center bottom-0">
+    <div className="w-full h-[7rem] flex justify-between bg-[#475569] items-center bottom-0">
       <img
         className="w-[6rem] ml-[1rem] h-[6rem] object-cover "
         src={logoFooter}

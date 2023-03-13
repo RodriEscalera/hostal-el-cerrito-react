@@ -48,6 +48,9 @@ function SideBar() {
 
   const location = useLocation();
   const path = location.pathname.split("/")[1];
+  const handleClick = () => {
+    dispatch(setSideBar(false));
+  };
   return (
     <AnimatePresence>
       {isActive ? (
@@ -56,20 +59,23 @@ function SideBar() {
           animate={"animate"}
           exit={"exit"}
           variants={variantsFather}
-          className=" h-[100%] w-[100%] z-10  fixed"
+          className=" h-[100%] w-[100%] z-20  fixed"
         >
-          <div className=" h-[100%] w-[100%] z-10  absolute top-[0%]">
+          <div className=" h-[100%] w-[100%] z-20  absolute top-[0%]">
             <motion.div
               variants={variantsSideBar}
               initial="initial"
               animate="animate"
               className="h-full w-[60%] z-20 absolute bg-[#093F76] top-[0%] right-[0%] text-white"
             >
-              <div className="mt-3">
+              <div className="mt-3 z-20">
                 <Link
                   to={path === "salta" ? "/salta/home" : "/sanLorenzo/home"}
                 >
-                  <div className="flex justify-start h-[4.5rem] ml-2 items-center">
+                  <div
+                    onClick={handleClick}
+                    className="flex justify-start h-[4.5rem] ml-2 items-center"
+                  >
                     <HomeIcon />
                     <h1 className="text-2xl font-roboto ml-3">Inicio</h1>
                   </div>
@@ -78,7 +84,10 @@ function SideBar() {
                 <Link
                   to={path === "salta" ? "/salta/rooms" : "/sanLorenzo/rooms"}
                 >
-                  <div className="flex justify-start h-[4.5rem] ml-2 items-center">
+                  <div
+                    onClick={handleClick}
+                    className="flex justify-start h-[4.5rem] ml-2 items-center"
+                  >
                     <BedroomParentIcon />
                     <h1 className="text-2xl font-roboto ml-3">Habitaciones</h1>
                   </div>
@@ -91,7 +100,10 @@ function SideBar() {
                       : "/sanLorenzo/location"
                   }
                 >
-                  <div className="flex justify-start h-[4.5rem] ml-2 items-center">
+                  <div
+                    onClick={handleClick}
+                    className="flex justify-start h-[4.5rem] ml-2 items-center"
+                  >
                     <LocationOnIcon />
                     <h1 className="text-2xl font-roboto ml-3">Ubicación</h1>
                   </div>
@@ -102,7 +114,10 @@ function SideBar() {
                     path === "salta" ? "/salta/contact" : "/sanLorenzo/contact"
                   }
                 >
-                  <div className="flex justify-start h-[4.5rem] ml-2 items-center">
+                  <div
+                    onClick={handleClick}
+                    className="flex justify-start h-[4.5rem] ml-2 items-center"
+                  >
                     <ContactPhoneIcon />
                     <h1 className="text-2xl font-roboto ml-3">Contacto</h1>
                   </div>

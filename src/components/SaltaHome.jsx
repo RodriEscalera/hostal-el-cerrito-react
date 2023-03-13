@@ -26,8 +26,10 @@ function SaltaHome() {
     <div className="h-[95vh] w-full flex flex-col items-center">
       <CarouselPictures pictures={pictures} />
       <div className="mt-6 rounded-2xl p-2 w-[20rem] flex flex-col justify-center items-center text-center bg-white ">
-        <h1 className="text-3xl font-medium">Hostal El Cerrito Salta</h1>
-        <h1 className="w-[90%] text-[1.2rem] mt-2">
+        <h1 className="text-3xl font-medium font-roboto">
+          Hostal El Cerrito Salta
+        </h1>
+        <h1 className="w-[90%] text-[1.2rem] mt-2 font-roboto">
           Nuestro hostal se ubica a solo una cuadra de Plaza 9 de Julio, en
           pleno centro de la histórica y siempre colonial ciudad de Salta y a
           pasos de los más importantes edificios antiguos, iglesias y museos,

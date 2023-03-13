@@ -2,6 +2,7 @@
   "name": "hostal-el-cerrito",
   "version": "0.1.0",
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "@mui/icons-material": "^5.11.11",
     "@reduxjs/toolkit": "^1.9.3",
     "framer-motion": "^10.2.3",

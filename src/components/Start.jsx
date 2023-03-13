@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SaltaPicture from "../assets/first view/salta.jpg";
+import SanLorenzoPicture from "../assets/first view/san-lorenzo.jpg";
 
 function Start() {
   return (
@@ -16,8 +18,8 @@ function Start() {
             <div className="relative sombra rounded-2xl">
               <img
                 className="w-[18rem] h-[13rem] object-cover rounded-2xl mt-[2rem]"
-                src="https://media-cdn.tripadvisor.com/media/photo-s/25/fb/8c/46/hotel-exterior.jpg"
-                alt="hotel trucho"
+                src={SaltaPicture}
+                alt="hostal el cerrito salta"
               />
               <h1
                 style={{
@@ -34,8 +36,8 @@ function Start() {
             <div className="relative rounded-2xl sombra">
               <img
                 className="w-[18rem] h-[13rem] object-cover rounded-2xl mt-[4rem]"
-                src="http://res.cloudinary.com/simpleview/image/upload/v1642787126/clients/loscabosmx/Copia_de_Copia_de_Esperanza_0010x_8dcb97e1-1c39-4cd8-8e36-326ec39d65b3.jpg"
-                alt="hotel trucho"
+                src={SanLorenzoPicture}
+                alt="hostal el cerrito san lorenzo"
               />
               <h1
                 style={{

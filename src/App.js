@@ -6,6 +6,7 @@ import "./styles/styles.css";
 import SideBar from "./components/SideBar";
 import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
+import Rooms from "./components/Rooms";
 function App() {
   const location = useLocation();
   const isActive = useSelector((state) => state.sideBar);
@@ -18,7 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Start />} />
         <Route path="/salta/home" element={<SaltaHome />} />
+        <Route path="/salta/rooms" element={<Rooms />} />
       </Routes>
+      <div className="h-[3rem]"></div>
       <Footer />
     </div>
   );
