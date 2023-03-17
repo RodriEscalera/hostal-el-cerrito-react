@@ -3,12 +3,12 @@ import Carousel from "react-material-ui-carousel";
 
 function CarouselPictures({ pictures }) {
   return (
-    <div className="mt-[2rem]">
+    <div>
       <Carousel
         navButtonsAlwaysVisible={true}
         interval={4000}
         animation="slide"
-        className="w-[20rem] "
+        className="w-[18rem] "
       >
         {pictures.map((pic, key) => (
           <img

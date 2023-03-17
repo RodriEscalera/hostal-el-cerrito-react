@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .contt {
+  background-image: url("https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-morraine-lake.jpg");
+  -webkit-box-shadow: inset 0px -90px 18px -79px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -90px 18px -79px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -90px 18px -79px rgba(0, 0, 0, 0.75);
+  background-size: cover;
+} */

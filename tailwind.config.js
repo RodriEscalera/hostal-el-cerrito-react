@@ -9,6 +9,8 @@ module.exports = withMT({
         color2: "#098ACE",
         color3: "#0061A9",
         color4: "#97C7DE",
+        words: "#424242",
+        marino: "#284C7F",
         background: "#F5F5F5",
         darkness: "rgba(black, 1);",
       },

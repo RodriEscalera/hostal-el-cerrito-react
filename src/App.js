@@ -7,6 +7,9 @@ import SideBar from "./components/SideBar";
 import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
 import Rooms from "./components/Rooms";
+import LocationSalta from "./components/LocationSalta";
+import Contact from "./components/Contact";
+
 function App() {
   const location = useLocation();
   const isActive = useSelector((state) => state.sideBar);
@@ -20,6 +23,8 @@ function App() {
         <Route path="/" element={<Start />} />
         <Route path="/salta/home" element={<SaltaHome />} />
         <Route path="/salta/rooms" element={<Rooms />} />
+        <Route path="/salta/location" element={<LocationSalta />} />
+        <Route path="/salta/contact" element={<Contact />} />
       </Routes>
       <div className="h-[3rem]"></div>
       <Footer />
